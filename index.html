@@ -18,14 +18,17 @@
       function outputUpdate(vol) {
          var output = document.querySelector('#volume');
          output.value = vol;
-         output.style.left = vol - 20 + 'px'
+         output.style.left = vol - 20 + 'px';
       }
 
       let tg = window.Telegram.WebApp;
       let send = document.getElementById("send");
 
       send.addEventListener("click", () => {
-         tg.sendData(vol)
+         let age = document.getElementById("fader").value;
+
+         tg.sendData(age);
+         tg.close();
       });
    </script>
 

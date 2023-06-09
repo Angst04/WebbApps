@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>StoryTeller</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="slider">
+      <output for="fader" id="volume">1</output>
+      <input type="range" id="fader" min="1" max="90" value="1" step="1" oninput="outputUpdate(value)">
+   </div>
+
+   <script type="text/javascript">
+      function outputUpdate(vol) {
+         var output = document.querySelector('#volume');
+         output.value = vol;
+         output.style.left = vol - 20 + 'px'
+      }
+   </script>
+
+</body>
+</html>

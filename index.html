@@ -25,7 +25,7 @@
       let send = document.getElementById("send");
 
       send.addEventListener("click", () => {
-         let age = document.getElementById("fader").value;
+         let age = document.getElementById("volume").value;
 
          tg.sendData(JSON.stringify(age));
          tg.close();

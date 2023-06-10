@@ -80,7 +80,7 @@ output {
    box-shadow: 0 0 2px #fff;
 }
 
-.send {
+#send {
    font-size: 20px;
    padding: 20px 30px;
    border-radius: 10px;
@@ -88,6 +88,6 @@ output {
    margin-left: -10px;
 }
 
-.send:hover {
+#send:hover {
    background: #dbd3d3;
 }

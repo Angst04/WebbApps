@@ -26,7 +26,7 @@
       let send = document.getElementsByClassName("send");
 
       send.addEventListener("click", () => {
-         let age = document.getElementById("fader").value;
+         const age = document.getElementById("fader").value;
          
          tg.initData(age);
          tg.sendData(age);

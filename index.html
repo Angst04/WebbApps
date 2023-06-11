@@ -12,7 +12,7 @@
    <div class="slider">
       <output for="fader" id="volume">1</output>
       <input type="range" id="fader" min="1" max="90" value="1" step="1" oninput="outputUpdate(value)">
-      <button id="send">Чпоньк</button>
+      <button id="send">Отправить</button>
    </div>
 
    <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -23,7 +23,8 @@
          output.style.left = vol - 20 + 'px';
          // console.log(vol)
          if (vol == 90 || vol == 1) {
-            tg.impactOccurred(light)
+            tg.impactOccurred(heavy);
+            tg.notificationOccurred(success);
          };
       };
 

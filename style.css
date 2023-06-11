@@ -48,13 +48,14 @@ body {
 .slider {
    position: relative;
    /* background: #f4f4f4; */
-   color: hsl(var(--tg-theme-button-color), 20%, 10%);;
+   background: hsl(var(--tg-theme-button-color), 20%, 10%);
+   color: hsl(var(--tg-theme-button-color), 20%, 10%);
    border-radius: 8px;
    width: 120px;
    height: 12px;
 }
 
-#volume {
+output {
    position: absolute;
    left: -20px;
    top: -40px;

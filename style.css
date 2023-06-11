@@ -48,7 +48,7 @@ body {
 .slider {
    position: relative;
    /* background: #f4f4f4; */
-   color: hsl(var(--tg-theme-button-color), 40%, 40%);;
+   color: hsl(var(--tg-theme-button-color), 20%, 10%);;
    border-radius: 8px;
    width: 120px;
    height: 12px;
@@ -59,7 +59,7 @@ body {
    left: -20px;
    top: -40px;
    padding: 7px 10px;
-   background: hsl(var(--tg-theme-button-color), 40%, 40%);
+   background: hsl(var(--tg-theme-button-color), 20%, 10%);
    border-radius: 10px 10px 0 10px;
 }
 

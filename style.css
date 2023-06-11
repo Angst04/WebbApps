@@ -58,7 +58,7 @@ body {
    left: -20px;
    top: -40px;
    padding: 7px 10px;
-   background: hsl(var(--tg-theme-button-color), 40%, 70%);
+   background: hsl(var(--tg-theme-button-color), 40%, 40%);
    border-radius: 10px 10px 0 10px;
 }
 
@@ -67,7 +67,7 @@ body {
    left: 3px;
    width: 120px;
    height: 10px;
-   background: hsl(var(--tg-theme-button-color), 40%, 1%);
+   background: hsl(var(--tg-theme-button-color), 40%, 40%);
    -webkit-appearance: none;
    outline: none;
    border-radius: 4px;
@@ -87,6 +87,7 @@ body {
 
    font-size: 20px;
    color: var(--tg-theme-button-text-color);
+   color: red;
 
    padding: 20px 30px;
    border-radius: 10px;

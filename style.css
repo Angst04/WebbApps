@@ -34,6 +34,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body {
+   font-family: Arial;
+   background: var(--tg-theme-bg-color);
+   color: var(--tg-theme-text-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -47,7 +50,7 @@ body {
    background: #f4f4f4;
    border-radius: 8px;
    width: 120px;
-   height: 18px;
+   height: 12px;
 }
 
 output {
@@ -55,8 +58,8 @@ output {
    left: -20px;
    top: -40px;
    padding: 7px 10px;
-   background: #76de76;
-   color: #fff;
+   background: var(--tg-theme-secondary-bg-color);
+   color: var(--tg-theme-text-color);
    border-radius: 10px 10px 0 10px;
 }
 
@@ -65,7 +68,7 @@ output {
    left: 3px;
    width: 120px;
    height: 10px;
-   background: #76de76;
+   background: var(--tg-theme-secondary-bg-color);
    -webkit-appearance: none;
    outline: none;
    border-radius: 4px;
@@ -76,12 +79,18 @@ output {
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #76de76;
+   background: var(--tg-theme-secondary-bg-color);
    box-shadow: 0 0 2px #fff;
 }
 
 #send {
+   transition: .3s;
+
+   background-color: var(--tg-theme-button-color);
+
    font-size: 20px;
+   color: var(--tg-theme-button-text-color);
+
    padding: 20px 30px;
    border-radius: 10px;
    margin-top: 40px;
@@ -89,5 +98,6 @@ output {
 }
 
 #send:hover {
+   transition: .3s;
    background: #dbd3d3;
 }

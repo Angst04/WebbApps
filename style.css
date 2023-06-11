@@ -47,7 +47,7 @@ body {
 
 .slider {
    position: relative;
-   background: #f4f4f4;
+   /* background: #f4f4f4; */
    border-radius: 8px;
    width: 120px;
    height: 12px;
@@ -58,8 +58,7 @@ output {
    left: -20px;
    top: -40px;
    padding: 7px 10px;
-   background: var(--tg-theme-secondary-bg-color);
-   color: var(--tg-theme-text-color);
+   background: var(--tg-theme-button-color);
    border-radius: 10px 10px 0 10px;
 }
 
@@ -68,7 +67,7 @@ output {
    left: 3px;
    width: 120px;
    height: 10px;
-   background: var(--tg-theme-secondary-bg-color);
+   background: var(--tg-theme-button-color);
    -webkit-appearance: none;
    outline: none;
    border-radius: 4px;
@@ -79,13 +78,11 @@ output {
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: var(--tg-theme-secondary-bg-color);
+   background: var(--tg-theme-button-color);
    box-shadow: 0 0 2px #fff;
 }
 
 #send {
-   transition: .3s;
-
    background-color: var(--tg-theme-button-color);
 
    font-size: 20px;
@@ -95,9 +92,4 @@ output {
    border-radius: 10px;
    margin-top: 40px;
    margin-left: -10px;
-}
-
-#send:hover {
-   transition: .3s;
-   background: #dbd3d3;
 }

@@ -93,20 +93,21 @@
 
    <script src="https://cdn.jsdelivr.net/npm/ios-drum@1.1.1/dist/ios-drum.min.js"></script>
    <script type="text/javascript">
-      // Initialize the iOS Drum
-      var numberDrum = new IosDrum(document.getElementById('number'), {
-         values: ['1', '2', '3', '4', '5'], // Example values for the drum
-         height: 200, // Set the height of the drum
-         lineHeight: 40, // Set the line height of each value
-         selectEvent: 'mouseup', // Change the event to select a value
-         // You can customize the appearance of the drum by overriding the default CSS classes
-         classes: {
-            container: 'ios-drum',
-            line: 'ios-drum-line',
-            label: 'ios-drum-label',
-            value: 'ios-drum-value',
-            selected: 'ios-drum-selected'
-         }
+      document.addEventListener('DOMContentLoaded', function() {
+         var numberDrum = new IosDrum(document.getElementById('number'), {
+            values: ['1', '2', '3', '4', '5'], // Example values for the drum
+            height: 200, // Set the height of the drum
+            lineHeight: 40, // Set the line height of each value
+            selectEvent: 'mouseup', // Change the event to select a value
+            // You can customize the appearance of the drum by overriding the default CSS classes
+            classes: {
+               container: 'ios-drum',
+               line: 'ios-drum-line',
+               label: 'ios-drum-label',
+               value: 'ios-drum-value',
+               selected: 'ios-drum-selected'
+            }
+         });
       });
    </script>
 </body>

@@ -20,11 +20,13 @@
       function outputUpdate(vol) {
          var output = document.querySelector('#volume');
          output.value = vol;
-         output.style.left = vol - 20 + 'px';
-         // console.log(vol)
-         if (vol == 90 || vol == 1) {
-            tg.impactOccurred(light);
+         if (vol < 45) {
+            output.style.left = vol - 35 + 'px';
          };
+         if (vol > 45) {
+            output.style.left = vol - 17 + 'px';
+         }
+         
       };
 
 

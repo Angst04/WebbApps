@@ -1,9 +1,19 @@
 let tg = window.Telegram.WebApp;
-      
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+
 tg.MainButton.show()
-tg.MainButton.text = "Отправить"; //изменяем текст кнопки 
-tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
-tg.MainButton.color = "#4e4e4e"; //изменяем цвет бэкграунда кнопки
+tg.MainButton.text = "Отправить"; 
+tg.MainButton.textColor = "#ffffff"; 
+tg.MainButton.color = "#4e4e4e"; 
+
+
+let theme = document.getElementById('theme');
+if (prefersDarkMode) {
+   theme.href = 'dark-mode.css'
+} else {
+   theme.href = 'light-mode.css'
+};
 
 
 function outputUpdate(vol) {

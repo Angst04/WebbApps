@@ -34,82 +34,84 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 html {
-   font-size: 125%; /* Increase the base font size by 1.25 times */
-   overflow: hidden; /* Disable scrolling */
- }
- 
- body {
-   font-family: Arial;
-   background: #1a1a1a; /* Dark background color */
-   color: #ffffff; /* White text color */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   margin: 0;
-   padding: 0;
-   overflow: hidden; /* Hide scrollbars */
- }
- 
- .slider {
-   position: relative;
-   color: #ffffff;
-   border-radius: 10px; /* Increased border radius */
-   width: 150px; /* Increased width */
-   height: 15px; /* Increased height */
- }
- 
- output {
-   transition: .2s ease-out;
-   position: absolute;
-   left: -35px; /* Adjusted position */
-   top: -55px; /* Adjusted position */
-   padding: 10px 15px; /* Adjusted padding */
-   background: #2b2b2b; /* Darker background color */
-   border-radius: 15px 15px 0 15px; /* Increased border radius */
-   box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
-   color: #ffffff; /* White text color */
- }
- 
- #fader {
-   position: relative;
-   left: 6px; /* Adjusted position */
-   width: 150px; /* Increased width */
-   height: 12px; /* Increased height */
-   background: #2b2b2b; /* Darker background color */
-   -webkit-appearance: none;
-   outline: none;
-   border-radius: 6px; /* Increased border radius */
-   box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
- }
- 
- #fader::-webkit-slider-thumb {
-   -webkit-appearance: none;
-   width: 31.25px; /* Adjusted width */
-   height: 31.25px; /* Adjusted height */
-   border-radius: 50%;
-   background: #4e4e4e;
-   box-shadow: 0 0 4px #000;
-   transition: background-color 0.3s ease; /* Adding animation to the slider thumb */
- }
- 
- #fader::-webkit-slider-thumb:hover {
-   background-color: #ffffff; /* Changing background color on hover */
- }
- 
- #send {
-   background-color: #4e4e4e; /* Darker button background color */
-   font-size: 25px; /* Increased font size */
-   color: #ffffff; /* White text color */
-   padding: 25px 40px; /* Adjusted padding */
-   border-radius: 15px; /* Increased border radius */
-   margin-top: 50px; /* Adjusted position */
-   margin-left: -20px; /* Adjusted position */
-   transition: background-color 0.3s ease; /* Adding animation to the button */
- }
- 
- #send:hover {
-   background-color: #ffffff; /* Changing background color on hover */
-   color: #4e4e4e; /* Changing text color on hover */
- }
- 
+  font-size: 125%; /* Increase the base font size by 1.25 times */
+  overflow: hidden; /* Disable scrolling */
+}
+
+body {
+  font-family: Arial;
+  background: #1a1a1a; /* Dark background color */
+  color: #ffffff; /* White text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.slider {
+  position: relative;
+  color: #ffffff;
+  border-radius: 10px; /* Increased border radius */
+  width: 150px; /* Increased width */
+  height: 15px; /* Increased height */
+}
+
+output {
+  transition: .2s ease-out;
+  position: absolute;
+  left: -35px; /* Adjusted position */
+  top: -55px; /* Adjusted position */
+  padding: 10px 15px; /* Adjusted padding */
+  background: #2b2b2b; /* Darker background color */
+  border-radius: 15px 15px 0 15px; /* Increased border radius */
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  color: #ffffff; /* White text color */
+}
+
+#fader {
+  position: relative;
+  left: 6px; /* Adjusted position */
+  width: 150px; /* Increased width */
+  height: 12px; /* Increased height */
+  background: #2b2b2b; /* Darker background color */
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 6px; /* Increased border radius */
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+#fader::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 31.25px; /* Adjusted width */
+  height: 31.25px; /* Adjusted height */
+  border-radius: 50%;
+  background: #4e4e4e;
+  box-shadow: 0 0 4px #000;
+  transition: background-color 0.3s ease; /* Adding animation to the slider thumb */
+}
+
+#fader::-webkit-slider-thumb:hover {
+  background-color: #ffffff; /* Changing background color on hover */
+}
+
+
+/* 
+#send {
+  background-color: #4e4e4e;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 25px 40px; 
+  border-radius: 15px; 
+  margin-top: 50px; 
+  margin-left: -20px; 
+  transition: background-color 0.3s ease; 
+}
+
+#send:hover {
+  background-color: #ffffff; 
+  color: #4e4e4e;
+}
+*/

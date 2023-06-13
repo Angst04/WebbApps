@@ -9,8 +9,8 @@ if (prefersDarkMode) {
    tg.MainButton.color = "#4e4e4e"; 
 } else {
    theme.href = 'light-mode.css'
-   tg.MainButton.textColor = tg.button_color; 
-   tg.MainButton.color = tg.button_text_color; 
+   tg.MainButton.textColor = '#333333'; 
+   tg.MainButton.color = '#cccccc'; 
 };
 
 

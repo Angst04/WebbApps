@@ -39,7 +39,8 @@ html {
 }
 
 body {
-  max-height: 500px;
+  touch-action: none;
+  max-height: 30vh;
   overflow: hidden;
   font-family: Arial;
   background: #1a1a1a; /* Dark background color */
@@ -47,7 +48,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden; /* Hide scrollbars */

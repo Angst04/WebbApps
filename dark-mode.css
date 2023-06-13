@@ -40,7 +40,7 @@ html {
 
 body {
   touch-action: none;
-  max-height: 30vh;
+  max-height: 20vh;
   overflow: hidden;
   font-family: Arial;
   background: #1a1a1a; /* Dark background color */
@@ -54,6 +54,7 @@ body {
 }
 
 .slider {
+  transform: translateZ(0);
   position: relative;
   color: #ffffff;
   border-radius: 10px; /* Increased border radius */
